@@ -1,0 +1,7 @@
+<h1>{{titulo}}</h1>
+<figure *ngIf="imagem">
+    <img [src]="imagem" [alt]="titulo">
+    <figcaption>
+        {{conteudo}}
+    </figcaption>
+</figure>

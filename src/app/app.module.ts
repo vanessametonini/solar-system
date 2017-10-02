@@ -1,16 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http'
 
-import { AppComponent } from './app.component';
+import { AppComponent } from './app.component'
+import { PlanetaComponent } from './planeta/planeta.component'
+import { PlanetasService } from './planeta/planetas.service'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PlanetaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [PlanetasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

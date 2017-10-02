@@ -1,0 +1,9 @@
+<main>
+    <section *ngFor="let planeta of listaPlanetas">
+        <planeta
+            [titulo]="planeta.titulo"
+            [imagem]="planeta.imagem"
+            [conteudo]="planeta.conteudo"
+        ></planeta>
+    </section>
+</main>
